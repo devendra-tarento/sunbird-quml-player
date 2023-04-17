@@ -7,10 +7,12 @@
       [showFeedBack]="showFeedBack" [currentSolutions]="currentSolutions" (showSolution)="viewSolution()"
       [initializeTimer]="initializeTimer" [replayed]="parentConfig?.isReplayed" [disableNext]="disableNext"
       [startPageInstruction]="startPageInstruction" [attempts]="attempts" [showStartPage]="showStartPage"
-      [showDeviceOrientation]="sectionConfig?.config?.showDeviceOrientation" (toggleScreenRotate)="toggleScreenRotate()">
+      [showDeviceOrientation]="sectionConfig?.config?.showDeviceOrientation" (toggleScreenRotate)="toggleScreenRotate()"
+      [navigationType]="navigationType"
+      > 
     </quml-header>
 
-    <div class="landscape-mode">
+    <div class="landscape-mode"> 
       <div class="lanscape-mode-left">
         <div class="current-slide" *ngIf="currentSlideIndex !== 0">
           {{myCarousel.getCurrentSlideIndex()}}/{{noOfQuestions}}

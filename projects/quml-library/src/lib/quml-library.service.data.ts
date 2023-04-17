@@ -283,7 +283,7 @@ export const mockQumlLibraryServiceData = {
     "isSectionsAvailable": true,
     "isReplayed": false,
     "identifier": "do_213484313936035840138",
-    "contentName": " Vivek Test questionset",
+    "contentName": " Test questionset",
     "baseUrl": "",
     "instructions": "<ol><li>Please circle the correct answer</li><li>Do not use mobile phones</li></ol>",
     "questionCount": 4,

@@ -17,6 +17,7 @@
   &__metadata {
     display: flex;
     align-items: center;
+    padding-right: 2rem;
   }
 
   &__container {
@@ -156,6 +157,10 @@ quml-durationtimer {
   100% {
     opacity: 1;
   }
+}
+
+.nxtbtn{
+  padding: 9% 12% 0 12%;
 }
 
 

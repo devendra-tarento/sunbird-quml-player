@@ -67,6 +67,7 @@ export class SectionPlayerComponent implements OnChanges, AfterViewInit {
     NEXT: 1,
     PREV: 2
   };
+  navigationType:any = {};
   active = false;
   showAlert: boolean;
   currentOptions: any;
@@ -204,6 +205,7 @@ export class SectionPlayerComponent implements OnChanges, AfterViewInit {
 
     
     this.shuffleOptions=this.sectionConfig.config?.shuffleOptions;
+    this.navigationType= this.sectionConfig.config?.navigation;
     this.isShuffleQuestions = this.sectionConfig.metadata.shuffle;
     this.noOfQuestions = this.questionIds.length;
     this.viewerService.initialize(this.sectionConfig, this.threshold, this.questionIds, this.parentConfig);
